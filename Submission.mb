@@ -1,0 +1,96 @@
+# Swift Student Challenge 2026 Submission
+
+## App Playground
+> Create an app playground that can be experienced within three minutes.
+
+### Name of your app playground
+
+`Ohajiki`
+
+### Upload three screenshots of your app playground that best represent the user experience as .png or .jpg files. Do not upload handwritten notes, sketches, or outlines.
+
+
+
+### Which software should we use to run your app playground?
+ `Xcode 26 or later`
+
+### What problem is your app playground trying to solve and what inspired you to solve it? 200 words or less.
+When I was little, I played Ohajiki with my grandparents and siblings. I was fascinated by their beautiful, colorful glass appearance, the sound they made when they collided, and the game of flicking them to hit targets. Recently, I recalled this and researched Ohajiki, learning about their usefulness. Ohajiki are a traditional Japanese game that helps prevent dementia and aids cognitive development by using your fingertips and predicting trajectories.
+Moreover, passing down old-fashioned games like Ohajiki from the older generation to children is an excellent means of fostering interaction between these generations. In fact, my grandparents taught me how to play Ohajiki.
+Despite being such a wonderful game for fostering intergenerational exchange, Ohajiki is rarely played today. One reason is that in our era of diverse games, play like Ohajiki offers less stimulation, making the appeal of deliberately choosing an analog game seem diminished.
+I will develop an app that combines digital expression with the theme of Ohajiki. This app, accessible to everyone from children to the elderly, will address the issue of Ohajiki being relatively unknown. In doing so, it will fulfill the inherent value of Ohajiki: promoting child development, preventing dementia in the elderly, and fostering intergenerational exchange.
+
+
+### Who would benefit from your app playground and how? 200 words or less.
+This app is designed for older generations and children to play together. By having seniors, who are familiar with traditional Ohajiki, play alongside digitally savvy children, they can teach each other, fostering intergenerational exchange. The simple gameplay of flicking Ohajiki makes it easy for both seniors and children to enjoy.
+Traditionally, Ohajiki involves flicking one marble to hit another targeted Ohajiki. Successfully hitting it allows you to take that Ohajiki, and the player with the most Ohajiki wins. However, simply replicating this in an app would be unfamiliar and unappealing to today's children. Therefore, we reconstructed the rules to preserve the charm of Ohajiki while adding puzzle-like elements unique to digital, such as merging and disappearing Ohajiki. It also allows for focused solo play or cooperative play with a partner.
+This app encourages conversation by letting players aim for new records alone or achieve high scores together. It proposes a new way to play that retains the traditional appeal of Ohajiki—being enjoyable for everyone—while adding the utility of digital technology.
+
+
+### How did accessibility factor into your design process? 200 words or less.
+The controls and rules have been designed to be intuitive and straightforward, ensuring the game is enjoyable for everyone from children to the elderly.
+The app's introductory section features an introductory animation upon launch, followed by onboarding and a tutorial, before progressing to the main game. This structure naturally draws users unfamiliar with Japanese culture into the game's world and conveys the appeal of Ohajiki.
+The animations showcase the marbles' beautiful appearance and the pleasant sound they make when colliding. The onboarding process, set against footage of actual gameplay, explains the marbles and the app itself, sparking the user's interest.
+This app places equal emphasis on auditory as well as visual experiences. Alongside sound effects for collisions, combinations, and disappearances, a system was implemented where the pitch during combinations changes based on the combo count, making the situation easily discernible through sound alone.
+Visually, hand animations were introduced in the tutorial to encourage intuitive understanding without over-reliance on text. Furthermore, to accommodate colour vision diversity, the marbles are colour-coded in magenta, cyan, yellow, and navy blue. Highlighting the marbles also achieves both a realistic texture and improved visibility against the background.
+
+
+### Did you use open source software, other than Swift?
+`No`
+
+#### List the open source software you used and explain why you used it. You acknowledge and agree that you are solely responsible for the content of your submission and agree to comply with all applicable licensing terms and copyright obligations. 200 words or less.
+
+
+### Did you use any content that you don't have ownership rights to?
+`No`
+
+#### You acknowledge and agree that you are solely responsible for the content of your submission. If your submission includes any music, photos, artwork, or any other content that you don't have ownership rights to, you agree to comply with all applicable licensing terms and copyright obligations. 200 words or less.
+
+
+> AI tools may be used to assist with specific tasks of your project, provided that all usage is fully disclosed below. Through their submissions, participants are expected to demonstrate significant individual contributions and technical understanding of their app playground, and skills like problem-solving, impactfulness of the solution, creativity, user experience and design, and use of appropriate tools and technologies.
+
+### Did you use AI tools?
+`Yes`
+
+#### Describe which AI tools you used, what you used them for, and what you learned. 200 words or less.
+I used Cursor, ChatGPT, and Gemini. Cursor was used for coding, while ChatGPT and Gemini were employed for both coding and generating ideas. By also brainstorming with ChatGPT and Gemini, it became easier to come up with ideas.
+When coding with AI, Swift's syntax is very natural and close to English, making it highly understandable. Furthermore, SwiftUI was particularly useful for leveraging AI, as it allows layouts to be easily constructed simply by writing code. I have been learning Swift since Year 8 and can handle basic coding independently. Additionally, utilising AI for coding not only increases development efficiency but also enables me to quickly learn the knowledge needed to realise what I want to create.
+When undertaking complex implementations, I encountered the challenge of accurately conveying my vision to the AI. Consequently, when issuing instructions, I made a conscious effort to avoid ambiguous or abstract expressions, instead employing logical explanations that drew upon my knowledge of mathematics and physics. This experience taught me how to communicate my ideas to the AI in detail.
+
+
+### What other technologies did you use in your app playground, and why did you choose them? 200 words or less.
+We adopted SwiftUI, a declarative UI framework, as the core of our UI to ensure development speed and consistency in state management. Meanwhile, we bridge and utilize UIKit for areas requiring advanced customization or existing assets.
+To handle state transitions reactively, we primarily adopted Combine for state synchronization and timer-driven logic using @Published and sink/assign. For asynchronous processing, we combined Swift Concurrency to safely perform state updates primarily on the main actor.
+To deliver high-quality audio and video experiences, the onboarding video was implemented using AVPlayer/AVPlayerLayer, with playback primarily built on AVFoundation.
+For the confetti effect during clearing, we introduced 3D rendering using SceneKit. This enables dynamic visual effects impossible to achieve with 2D alone.
+
+
+---
+
+## Beyond the Swift Student Challenge
+### Have you shared your app development knowledge with others or used your technology skills to support your community? Describe specific activities and impact. Note: This is about you, not your app. 200 words or less.
+In my second year of secondary school, I began developing apps because I wanted to create the apps I used daily myself. Since then, I have been learning from Sugiyama Jōtarō, the winner in both 2020 and 2025. I develop apps alongside peers of the same age who also aspire to be winners, sharing development knowledge, brainstorming ideas, and giving each other feedback.
+When I attended the Swift Student Challenge Winners' celebration, I was surprised to see people my own age among the award recipients. I deeply respected the sight of them presenting their work to a large audience. This sparked the thought, ‘Next year, I want to stand in that same place,’ and I became even more dedicated to my app development.
+To date, I have created a walking app featuring functionality to record small discoveries during walks through photos and text. I added this feature because I personally enjoy making such discoveries whilst walking.
+Moving forward, I wish to develop apps that deliver experiences etched into people's memories. To achieve this, I aspire to become a Swift Student Challenge winner, thereby connecting with diverse individuals and their apps, fostering meaningful exchanges.
+
+
+---
+
+## Apps on the App Store (optional)
+### If you have one or more apps on the App Store created entirely by you as an individual, tell us about them. This won‘t influence the judging process. 200 words or less.
+
+
+---
+
+## Social Media (optional)
+### If you’d like to share links to your website or social media, please add them below. 200 words or less.
+
+
+## Comments (optional)
+### Is there anything else you‘d like us to know?
+Since encountering Swift in my second year of junior high school, I've been captivated by the joy of bringing ideas to life through programming. I've always found happiness in shaping and expressing my experiences and passions, then sharing them with others. For me, programming isn't just a skill—it's a powerful means of communicating myself and my experiences.
+The core of this project is reviving fading traditions through an app. Ohajiki is a wonderful part of Japanese culture, yet it's losing its place in modern times. My goal is to use Swift to pass on these ohajiki games to the next generation with my own hands.
+I hope this app becomes a bridge connecting tradition and technology, the previous generation and the next.
+Nothing would make me happier than continuing to share my wonderful experiences with others through apps.
+
